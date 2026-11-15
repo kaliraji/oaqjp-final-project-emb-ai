@@ -4,10 +4,10 @@ This module tests the emotion_detector function to pass the static values
 
 import unittest
 
-from EmotionDetector.emotion_detector import emotion_detector
+from final_project.EmotionDetection.emotion_detection import emotion_detector
 
 
-class TestEmotionDetector(unittest.TestCase):
+class TestEmotionDetection(unittest.TestCase):
     """
     Unit test class of the emotion_detector module
     """

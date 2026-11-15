@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 
-from EmotionDetector.emotion_detector import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 app = Flask(
     "Emotion Detector", template_folder="../templates", static_folder="../static"
@@ -21,5 +21,5 @@ def find_emotion_scores():
 def render_index_page():
     return render_template("index.html")
 
-
-app.run(port=5000)
+if __name__ == "__main__":
+    app.run(port=5000)

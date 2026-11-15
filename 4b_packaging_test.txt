@@ -2,6 +2,6 @@
 Python 3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 Ctrl click to launch VS Code Native REPL (https://aka.ms/python-native-repl)
->>> from EmotionDetector.emotion_detector import emotion_detector
+>>> from EmotionDetection.emotion_detection import emotion_detector
 >>> emotion_detector("I love new technologies")
 >>> {'anger': 0.0132405795, 'disgust': 0.0020517302, 'fear': 0.009090992, 'joy': 0.9699522, 'sadness': 0.054984167, 'dominant_emotion': 'joy'}

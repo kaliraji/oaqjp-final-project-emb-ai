@@ -1,0 +1,6 @@
+(.venv) PS D:\workspace\oaqjp-final-project-emb-ai\final_project> python test_emotion_detection.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.502s
+
+OK

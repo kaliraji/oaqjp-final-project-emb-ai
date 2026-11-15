@@ -1,0 +1,21 @@
+from flask import Flask, request, render_template
+
+from EmotionDetector.emotion_detector import emotion_detector
+
+app = Flask(
+    "Emotion Detector", template_folder="../templates", static_folder="../static"
+)
+
+
+@app.route("/emotionDetector")
+def find_emotion_scores():
+    text_to_analyze = request.args.get("textToAnalyze")
+    return emotion_detector(text_to_analyze)
+
+
+@app.route("/")
+def render_index_page():
+    return render_template("index.html")
+
+
+app.run(port=5000)
